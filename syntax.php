@@ -30,20 +30,6 @@ class syntax_plugin_signhere extends DokuWiki_Syntax_Plugin {
     var $font_size = "x-small";
 
     /**
-     * return some info
-     */
-    function getInfo(){
-        return array(
-            'author' => 'Dennis Ploeger',
-            'email'  => 'develop@dieploegers.de',
-            'date'   => '2006-01-18',
-            'name'   => 'Signhere Plugin',
-            'desc'   => 'Displays a signature line with a description',
-            'url'    => 'http://wiki.splitbrain.org/plugin:signhere',
-        );
-    }
-
-    /**
      * What kind of syntax are we?
      */
     function getType(){

@@ -1,0 +1,7 @@
+base	signhere
+author	Dennis Ploeger
+email	develop@dieploegers.de
+date	2011-02-14
+name	Signhere Plugin
+desc	Displays a signature line with a description
+url		http://www.dokuwiki.org/plugin:signhere
