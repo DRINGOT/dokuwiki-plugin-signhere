@@ -46,8 +46,8 @@ class syntax_plugin_signhere extends DokuWiki_Syntax_Plugin {
     /**
      * Connect pattern to lexer
      */
-    function connectTo($mode) {
-        $this->Lexer->addSpecialPattern("-_.*?_-", $mode ,'plugin_signhere');
+    function connectTo($format) {
+        $this->Lexer->addSpecialPattern("-_.*?_-", $format ,'plugin_signhere');
     }
 
     /**
@@ -62,10 +62,10 @@ class syntax_plugin_signhere extends DokuWiki_Syntax_Plugin {
     /**
      * Create output
      */
-    function render($mode, Doku_Renderer $renderer, $data) {
+    function render($format, Doku_Renderer $renderer, $data) {
         global $INFO, $conf;
 
-        if($mode == 'xhtml'){
+        if($format == 'xhtml'){
 
             $data[0] = str_repeat('&nbsp;', $this->space_fill).$data[0].str_repeat('&nbsp;', $this->space_fill);
             
